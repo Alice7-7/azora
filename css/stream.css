@@ -1,0 +1,132 @@
+
+
+:root {
+    --first-color: hsl(170, 61%, 40%);
+    --gap: 20px;
+}
+
+.stream_body {
+    width: 100%;
+    min-height:100vh;
+    display: grid;
+    place-items: center;
+}
+
+.stream_row {
+    width: 80%;
+    max-width: 1170px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: var(--gap);
+    padding: 3rem 0;
+}
+
+.stream_row .stream_col {
+    min-height: 300px;
+    cursor: pointer;
+}
+
+.stream_row .stream_col .stream_wrapper {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    position: relative;
+}
+
+.stream_row .stream_col .stream_wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    user-select: none;
+    transition: 0.3s;
+}
+
+.stream_row .stream_col .stream_wrapper:hover img {
+    transform: scale(1.2);
+}
+
+.stream_row .stream_col .stream_wrapper .stream_content {
+    width: 100%;
+    height: 100%;
+    padding: 25px;
+    position: absolute;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    flex-direction: column;
+    color: #fff;
+    gap: 10px;
+    text-transform: uppercase;
+    user-select: none;
+}
+
+
+.stream_row .stream_col .stream_wrapper .stream_content h4 {
+    color: #fff;
+    font-size: 10px;
+    letter-spacing: 2px;
+}
+
+.stream_row .stream_col .stream_wrapper .stream_content h3 {
+    color: #fff;
+    font-size: 35px;
+    letter-spacing: 2px;
+
+}
+
+.stream_row .stream_col .stream_wrapper .stream_content a {
+    display: inline-block;
+    text-decoration: none;
+    color: #000;
+    background: #fff;
+    padding: 10px 40px;
+    font-size: 18px;
+    letter-spacing: 2px;
+
+}
+
+.stream_col.stream_right {
+    display: flex;
+    flex-direction: column;
+    grid-area: var(--gap);
+}
+
+.stream_col.stream_right .stream_col {
+    min-height: 300px;
+}
+
+
+@media(max-width: 991px){
+
+    .stream_row {
+        grid-template-columns: 1fr;
+    }
+
+    .stream_col.stream_right {
+       flex-direction: row;
+    }
+}
+
+
+@media(max-width: 768px){
+
+    .stream_row {
+        width: 90%;
+        grid-template-columns: 1fr;
+    }
+
+    .stream_col.stream_right{
+        flex-direction: column;
+
+    }
+
+    .stream_row .stream_col .stream_wrapper .stream_content a {
+        padding: 10px 25px ;
+        font-size: 15px;
+    }
+
+
+
+ 
+}

@@ -1,0 +1,48 @@
+
+
+.pol_container {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;
+    max-width: 750px;
+    /* margin: 0 auto; */
+    margin-top: 70px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+
+
+.pol_container a {
+    color: #000;
+}
+
+.pol_container a:hover {
+    color:#1b9da7 ;
+    text-decoration: underline;
+}
+
+.pol_container p {
+  font-size: 18px;
+  line-height: 30px;
+  color: #25272a;
+  text-align: justify;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.pol_container h1 {
+    margin-top: 35px;
+  margin-bottom: 30px;
+}
+
+.pol_lists {
+  list-style: square;
+  margin-left: 30px;
+  font-size: 17px;
+}
+
+.azora {
+  font-weight: 700;
+  color: transparent;
+  background-clip: text;
+  background-image: linear-gradient(135deg,#1b9da7 40%,#2165f8);
+}

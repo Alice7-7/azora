@@ -1,0 +1,173 @@
+
+
+:root {
+    --first: #179797;
+
+    --linear:  linear-gradient(135deg,#1b9da7 40%,#2165f8);
+
+
+}
+
+.legis_body {
+    font-family: 'Poppin';
+    width: 100%;
+    min-height: 70vh;
+    display: grid;
+    place-items: center;
+}
+
+.legis_row {
+    width: 80%;
+    max-width: 1170px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 50px;
+    overflow-x: hidden;
+    padding: 5rem 0;
+}
+.legis_row {
+    overflow: hidden;
+}
+
+.legis_row .legis_img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.3s;
+}
+
+
+.legis_row .legis_img:hover img {
+
+    transform: scale(1.25);
+}
+
+.legis_row .legis_cwrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 30px;
+}
+
+.legis_row .legis_cwrapper span.legis_txt,
+.main_legis span.legis_txt {
+    display: block;
+    font-size: 20px;
+    text-transform: capitalize;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+
+}
+
+.legis_row .legis_cwrapper span.legis_txt span {
+    display: inline-block;
+    background-image: var(--linear);
+    width: 70px;
+    height: 5px;
+}
+
+.legis_row .legis_cwrapper h2,
+.main_legis h2 {
+    font-size: 40px;
+    font-weight: 700;
+    color: transparent;
+    background-clip: text;
+    background-image: var(--linear);
+    padding-bottom: 20px;
+}
+
+.legis_row .legis_cwrapper p,
+.main_legis p {
+    font-size: 16px;
+    line-height: 25px;
+    padding-bottom: 25px;
+}
+
+.legis_row .legis_cwrapper a {
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+    background:var(--first);
+    color: #fff;
+    padding: 15px 40px;
+    letter-spacing: 1px;
+    user-select: none ;
+}
+
+.legis_row .legis_cwrapper a:hover {
+    box-shadow: 0px 0px 15px  #179797;
+
+}
+
+.main_legis {
+    max-width: 750px;
+    padding: 0 30px;
+    text-align: start;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.main_legis span.legis_txt span{
+    display: inline-block;
+    background-image: var(--linear);
+    width: 70px;
+    height: 5px;
+}
+
+
+
+@media (max-width:991px) {
+
+    .legis_row {
+        grid-template-columns: 1fr;
+        grid-gap: 50px;
+    }
+
+    .legis_row .legis_cwrapper{
+        padding-left: 0;
+    }
+}
+
+
+@media (max-width:768px) {
+
+    .legis_row {
+        width: 90%;
+
+    }
+
+    .legis_row .legis_cwrapper h2 {
+        font-size: 30px;
+        padding-bottom: 20px;
+    }
+
+    .legis_row .legis_cwrapper p {
+        line-height: 24px;
+
+    }
+}
+
+@media (max-width:575px ) {
+    .legis_row .legis_cwrapper span.legis_txt {
+       font-size: 18px;
+    }
+
+    .legis_row .legis_cwrapper h2 {
+            font-size: 25px;
+    }
+
+    .legis_row .legis_cwrapper p {
+        font-size: 15px;
+        line-height: 22px;
+    }
+
+    .legis_row .legis_cwrapper a {
+        font-size: 15px;
+        padding: 10px 20px;
+    }
+
+}

@@ -1,0 +1,139 @@
+
+:root {
+
+    --linear:  linear-gradient(135deg,#1b9da7 40%,#2165f8);
+    
+}
+
+.usr_form {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    padding: 0 10px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+
+.btn.usr_btn {
+    width: 100%;
+}
+
+
+.home-img.pf_img{
+    position: relative;
+
+}
+
+.home-img img{
+    aspect-ratio: 1 / 1;
+    display: block;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    cursor: pointer;
+    background-clip: padding-box;
+    border: 2px solid transparent;
+    background: var(--linear);
+    box-shadow: 1px 3px 12px rgba(0, 0, 0, 0.18);
+
+}
+
+.usr_set_title {
+    text-align: center;
+    color: transparent;
+    background-clip: text;
+    background-image: var(--linear);
+}
+
+.pf_img img{
+    aspect-ratio: 1 / 1;
+    display: block;
+    object-fit: cover;
+    border-radius: 50%;
+    cursor: pointer;
+    background-clip: padding-box;
+    border: 3px solid transparent;
+    background: var(--linear);
+    box-shadow: 1px 3px 12px rgba(0, 0, 0, 0.18);
+}
+
+
+.home-container.usr_img_container img {
+
+    width:250px;
+}
+
+.home-container.usr_img_container img:hover {
+
+    scale: 1.05;
+
+}
+
+
+.home-container.usr_img_container{
+    display: flex;
+    justify-content: space-around;
+}
+
+.home-container.usr_img_container .home-content{
+    display: flex;
+    justify-content: center;
+    gap: 200px;
+}
+
+.error,
+.error1 {
+    margin-top: 20px;
+    background-image: linear-gradient(45deg, #ff3a58, #ff467d, #ff5a99, #ff1f41);
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    color: #fff;
+}
+.success {
+    margin-top:20px ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    color: white;
+    background-image: linear-gradient(135deg,#1b9da7 40%,#2165f8);
+}
+
+
+/* Account delete */
+
+.usr_form.account_del .del_form{
+    width: 30%;
+}
+
+.usr_set_title {
+    margin-top: 100px;
+}
+
+.usr_set_t2 {
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media screen and (max-width:768px){
+    .home-container.usr_img_container .home-content {
+        gap: 50px;
+    }
+}
+
+
+@media  screen and (max-width:992px) {
+
+    .home-container.usr_img_container .home-content {
+        gap: 50px;
+    }
+    
+}

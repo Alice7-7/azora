@@ -1,0 +1,107 @@
+
+:root {
+
+    --linear:  linear-gradient(135deg,#1b9da7 40%,#2165f8);
+
+    --red-linear: linear-gradient(45deg, #ff3a58, #ff1d5f, #ff0061, #ff3a58);
+
+
+}
+
+
+
+
+#tag_form ul {
+    position: absolute;
+    list-style: none;
+    width: 340px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 10px 16px rgba(0, 0, 0, 0.1);
+    top: calc(100% + 8px);
+    max-height: 300px;
+    z-index: 1;
+    overflow-y: auto;
+}
+
+#tag_form input:focus {
+    border: 1px solid #1b9da7;
+}
+
+.list{
+    width: 400px;
+    background-color: #ffffff;
+    border-radius:  0 0 5px 5px;
+}
+
+.list-items {
+    padding: 10px 20px;
+}
+
+.list-items:hover {
+    background-color: #f1f1f1;
+}
+
+.error,
+.error1 {
+    background-image: linear-gradient(45deg, #ff3a58, #ff467d, #ff5a99, #ff1f41);
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    color: #fff;
+}
+
+.success {
+    background-image: var(--linear);
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    color: #fff;
+}
+
+/* Account locked */
+
+.acc_lock {
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.acc_lock h1 {
+    color: transparent;
+    background-clip: text;
+    background-image: var(--linear);
+}
+
+.acc_lock p span {
+    color: transparent;
+    background-clip: text;
+    background-image: var(--red-linear);
+}
+
+.err_ques {
+    padding: 10px 20px;
+}
+
+/* ------------ */
+
+.l-form-con {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.l-form-con input {
+    padding-right: 30px;
+    width: 100%;
+}
+.pass_eye {
+    position: absolute;
+    right: 10px;
+    cursor: pointer;
+}

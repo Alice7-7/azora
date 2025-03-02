@@ -1,0 +1,156 @@
+
+
+/* =====> About Us */
+
+.a_about {
+    height: 100vh;
+    width: 100%;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.a_about .a_main img {
+    width: 590px;
+    max-width: 100%;
+    height: auto;
+    padding: 0 10px;
+}
+
+.a_about_txt {
+    width: 600px;
+    max-width: 100%;
+    padding:0 10px ;
+}
+
+.a_main {
+    width: 1290px;
+    max-width: 95%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.a_about_txt h4 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    color: #777777;
+    letter-spacing: 1px;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+.a_about_txt h1 {
+    font-size: 65px;
+    color: #111111;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.a_about_txt p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    color: #777777;
+    line-height: 30px;
+    margin-bottom: 35px;
+}
+
+.about_btn button {
+    background: #fff;
+    padding: 20px 32px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #111111;
+    border: none;
+    outline: none;
+    box-shadow: 0px 16px 32px 0px rgb(0 0 0 / 6%);
+    margin-right: 20px;
+}
+
+.about_btn button a {
+    text-decoration: none;
+    color: #000;
+}
+
+.about_btn button a:hover {
+    color: #fff;
+}
+
+.about_btn button:hover {
+    background-color: #179797;
+    color: #fff;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.about_btn .a_btn2 {
+    background: #111111 ;
+    color: #fff;
+}
+
+/* ERROR msg */
+
+
+.contact-form form .err_msg{
+    justify-content: center;
+    align-items: center;
+    padding: 14px;
+    width: 100%;
+    color: #fff;   
+    background-color: #ff5c8d;
+    display: none;
+}
+
+#loading img{
+    width: 70px;
+}
+
+.contact-form form #loading {
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    margin: 30px 0;
+    display: none;
+}
+
+
+.contact-form form .success_msg {
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    padding: 14px;
+    width: 100%;
+    color: #fff;   
+    background-image: linear-gradient(135deg,#1b9da7 40%,#2165f8) ;
+    display: none;
+}
+
+
+@media screen and (max-width: 1250px) {
+    .a_about{
+        width: 100%;
+        height: auto;
+        padding: 60px 0;
+    }
+
+    .a_about_txt {
+        text-align: center;
+        margin-top: 40px;
+
+    }
+}
+
+@media screen and (max-width: 650px) {
+
+    .a_about .a_main img {
+        margin-bottom: 35px;
+    }
+
+    .a_about_txt h1 {
+        font-size: 45px;
+        margin-bottom: 20px;
+    }
+}

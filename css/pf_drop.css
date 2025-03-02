@@ -1,0 +1,123 @@
+.profile_drop_down {
+
+    position: relative;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 10px;
+
+}
+
+.pf_action {
+    position: absolute;
+    right: 1px;
+    background: #fff;
+    top: calc(100% + 20px);
+    width: 240px;
+    min-height: 100px;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s;
+    border-radius: 10px;
+    box-shadow: 0 30px 30px rgba(0, 0, 0, 0.1);
+    padding-bottom: 10px;
+
+}
+
+.pf_action::before {
+    content: '';
+    position: absolute;
+    top: -6px;
+    right: 18px;
+    width: 15px;
+    height: 15px;
+    background: #fff;
+    transform: rotate(45deg);
+    border-radius: 3px;
+}
+
+.pf_action.pf_active {
+    opacity: 1;
+    visibility: visible;
+    z-index: 99;
+}
+
+.pf_info {
+    text-align: center;
+    padding: 15px 0;
+    z-index: 99;
+}
+
+.pf_info h3 {
+    font-size: 22px;
+    font-weight: 600;
+    color: #515151;
+}
+
+.pf_info span {
+    font-size: 15px;
+    font-weight: 400;
+    color: #7a7a7a;
+}
+
+.pf_action ul {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    z-index: 10;
+    background: #fff;
+    border-radius: 10px;
+}
+
+.pf_action ul li {
+    padding: 10px 15px;
+    transition: 0.5s;
+}
+
+.pf_action ul li:last-child:hover {
+    border-bottom-left-radius:10px ;
+    border-bottom-right-radius:10px  ;
+}
+
+.pf_action ul li:hover  {
+    background: #ecebeb;
+
+}
+
+.pf_action ul li:hover .pf_action ul li a span{
+    color: transparent;
+    background-clip: text;
+    background-image: linear-gradient(135deg,#1b9da7 40%,#2165f8)  ;
+}
+
+.pf_action ul li a {
+    text-decoration: none;
+    color: #515151;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.pf_action ul li a i {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 35px;
+    height: 35px;
+    font-size: 15px;
+    /* border-radius: 50%; */
+    color:  #7a7a7a;
+    /* background:  ; */
+}
+
+.pf_action ul li a span {
+    font-size: 15px;
+    font-weight: 500;
+    color: #7a7a7a;
+}
+
+.h_i{
+    width: 25px;
+    height: 25px;
+}
